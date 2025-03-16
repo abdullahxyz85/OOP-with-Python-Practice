@@ -19,43 +19,15 @@ class DimmerSwitch():
         print("Switch is On?", self.switchIsOn)
         print("Brightness is:", self.brightness)
 
-# Main Code:
+# Create three DimmerSwitch Objects:
 oDimmer1 = DimmerSwitch('Dimmer1')
-oDimmer1.turnOn()
-oDimmer1.raiseLevel()
-oDimmer1.raiseLevel()
-
-# Dimmer 2:
+print(type(oDimmer1))
+print(oDimmer1)
+print("oDimmer1 variables:", vars(oDimmer1))
+print()
 oDimmer2 = DimmerSwitch('Dimmer2')
-oDimmer2.turnOn()
-oDimmer2.raiseLevel()
-oDimmer2.raiseLevel()
-oDimmer2.raiseLevel()
-
-# Dimmer3:
+print(type(oDimmer2))
+print(oDimmer2)
+print()
 oDimmer3 = DimmerSwitch('Dimmer3')
-
-# Ask each switch to show itself:
-oDimmer1.show()
-oDimmer2.show()
-oDimmer3.show()
-
-# oDimmer = DimmerSwitch()
-# oDimmer.turnOn()
-# oDimmer.raiseLevel()
-# oDimmer.raiseLevel()
-# oDimmer.raiseLevel()
-# oDimmer.raiseLevel()
-# oDimmer.raiseLevel()
-# oDimmer.show()
-# # Lower the level:
-# oDimmer.lowerLevel()
-# oDimmer.lowerLevel()
-# oDimmer.turnOff()
-# oDimmer.show()
-# # Turn the switch on and raise the level:
-# oDimmer.turnOn()
-# oDimmer.raiseLevel()
-# oDimmer.raiseLevel()
-# oDimmer.raiseLevel()
-# oDimmer.show()
+print(type)

@@ -1,6 +1,8 @@
 # TV Class:
 class TV():
-    def __init__(self):
+    def __init__(self, brand, location):
+        self.brand = brand
+        self.location = location
         self.isOn = False
         self.isMuted = False
         # Some default lists of channels:
@@ -47,7 +49,8 @@ class TV():
             self.channelIndex = self.channelList.index(newChannel)
     def showInfo(self):
         print()
-        print("TV Status")
+        print("Status of TV:", self.brand)
+        print("     Location:", self.location)
         if self.isOn:
             print('    TV is: On')
             print('    Channel is:', self.channelList[self.channelIndex])
@@ -59,8 +62,8 @@ class TV():
             print('     TV is: Off')
 
 # Main Code:
-oTV1 = TV()
-oTV2 = TV()
+oTV1 = TV('Samsung', 'Family room')
+oTV2 = TV('Sony', 'Bedroom')
 
 # Turn both TV on
 oTV1.power()
